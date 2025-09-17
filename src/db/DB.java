@@ -41,7 +41,6 @@ public class DB {
 		try (FileInputStream fs = new FileInputStream("db.properties")) {
 			Properties props = new Properties();
 			props.load(fs);
-			
 			return props;
 		}
 		catch (IOException e) {
